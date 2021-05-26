@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  description: MyText
+  title: MyString
+  address: MyString
+  seen: false
+  category: MyString
+  latitude: MyString
+  longitude: MyString
+  link: MyString
+
+two:
+  description: MyText
+  title: MyString
+  address: MyString
+  seen: false
+  category: MyString
+  latitude: MyString
+  longitude: MyString
+  link: MyString
