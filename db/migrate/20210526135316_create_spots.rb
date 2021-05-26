@@ -6,9 +6,10 @@ class CreateSpots < ActiveRecord::Migration[6.1]
       t.string :address
       t.boolean :seen, default: false
       t.string :category
-      t.string :latitude
-      t.string :longitude
+      t.float :latitude
+      t.float :longitude
       t.string :link
+      t.string :photo
 
       t.timestamps
     end

@@ -45,13 +45,10 @@
 <row name="id" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
-<row name="username" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
-<default>NULL</default></row>
 <row name="email" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
-<row name="avatar" null="1" autoincrement="0">
+<row name="username" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
 <key type="PRIMARY" name="">
@@ -62,19 +59,16 @@
 <row name="id" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
-<row name="picture(s)" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
-<default>NULL</default></row>
 <row name="details - description" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
 <row name="title" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
-<row name="adress" null="1" autoincrement="0">
+<row name="address" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
-<row name="seen?" null="1" autoincrement="0">
+<row name="seen" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
 <row name="category" null="1" autoincrement="0">
@@ -86,7 +80,10 @@
 <row name="longitude" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
-<row name="website-link" null="1" autoincrement="0">
+<row name="link" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="photo" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
 <key type="PRIMARY" name="">
