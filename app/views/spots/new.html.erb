@@ -1,5 +1,8 @@
 <h1>Form to create a new spot here</h1>
 
-<%= form_with model: @spot do |form| %>
-  Form contents
+<%= simple_form_for(@spot) do |f| %>
+  <%= f.input :title %>
+  <%= f.input :address %>
+  <%= f.input :description %>
+  <%= f.submit %>
 <% end %>
