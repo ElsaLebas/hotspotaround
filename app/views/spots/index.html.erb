@@ -2,3 +2,8 @@
 <h2>Votre recherche ici</h2>
 <h2>A proximité</h2>
 <h2>map</h2>
+<ul>
+  <% @spots.each do |spot| %>
+    <li><%= spot.title %></li>
+  <% end %>
+</ul>
