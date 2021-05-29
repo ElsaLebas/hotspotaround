@@ -1,15 +1,11 @@
-<h1>HOT SPOTS AROUND</h1>
-<h2>Votre recherche ici</h2>
-<h2>A proximité</h2>
-<h2>map</h2>
-<ul>
-  <% @spots.each do |spot| %>
-    <li><%= spot.title %></li>
-  <% end %>
-</ul>
-
-<div id="map"
-     style="width: 100%; height: 600px;"
-     data-markers="<%= @markers.to_json %>"
-     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+<div>
+  <h1>HOT SPOTS AROUND</h1>
+  <h2>Votre recherche ici</h2>
+  <h2>A proximité</h2>
+  <h2>map</h2>
+  <ul>
+    <% @spots.each do |spot| %>
+      <li><%= spot.title %></li>
+    <% end %>
+  </ul>
 </div>

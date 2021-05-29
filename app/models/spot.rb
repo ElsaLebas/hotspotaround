@@ -1,7 +1,7 @@
 class Spot < ApplicationRecord
   has_many :favorites
 
-  validates :title, presence: true
+  validates :title, presence: true, uniqueness: true
   validates :description, presence: true
   validates :address, presence: true
 

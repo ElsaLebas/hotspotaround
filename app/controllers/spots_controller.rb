@@ -3,10 +3,10 @@ class SpotsController < ApplicationController
     @spots = Spot.all
 
     # the `geocoded` scope filters only spots with coordinates (latitude & longitude)
-    @markers = @spots.geocoded.map do |flat|
+    @markers = @spots.geocoded.map do |spot|
       {
-        lat: flat.latitude,
-        lng: flat.longitude
+        lat: spot.latitude,
+        lng: spot.longitude
       }
     end
   end
@@ -18,7 +18,7 @@ class SpotsController < ApplicationController
   def create
     @spot = Spot.new(spot_params)
     @spot.save
-    redirect_to "/"
+    redirect_to "spots"
   end
 
   private
